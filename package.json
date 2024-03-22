@@ -1,0 +1,42 @@
+{
+  "name": "third-party-points-helper",
+  "version": "1.0.0",
+  "description": "Provides an example for querying underlying token ownership across users",
+  "packageManager": "yarn@3.6.1",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "build": "node ./build.mjs",
+    "start": "node dist/main.js",
+    "lint": "yarn eslint && yarn prettier:list-different",
+    "lint:fix": "yarn eslint:fix && yarn prettier",
+    "eslint": "eslint . --ext .ts",
+    "eslint:fix": "eslint . --fix --ext .ts",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,json,md,sol,ts}\"",
+    "prettier:list-different": "prettier --config .prettierrc --list-different \"**/*.{js,json,md,sol,ts}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.0"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.9.8",
+    "@wagmi/core": "^2.6.5",
+    "cross-fetch": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.1",
+    "viem": "^2.7.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}

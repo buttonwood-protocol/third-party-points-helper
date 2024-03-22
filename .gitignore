@@ -1,0 +1,7 @@
+.idea
+.yarn
+.env
+dist
+node_modules
+persist
+output
